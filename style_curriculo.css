@@ -1,0 +1,169 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f2;
+  color: #000;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+
+.topo{
+  padding: 18px 0;
+}
+
+.topo-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.assinatura{
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+}
+
+.ponto{
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  background: red;
+  display:inline-block;
+}
+
+.nome{ font-size: 16px; }
+
+.cargo-topo{
+  font-size: 13px;
+  opacity: .7;
+}
+
+.menu a{
+  text-decoration:none;
+  color:#000;
+  font-size: 13px;
+}
+
+.menu .sep{
+  margin: 0 10px;
+  opacity:.6;
+}
+
+.menu .ativo{
+  color:#b87900;
+}
+
+
+.titulo-pagina{
+  padding: 60px 0 10px;
+}
+
+.titulo-pagina h1{
+  margin: 0;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+
+.bloco{
+  display:grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  padding: 50px 0;
+  align-items:start;
+}
+
+
+.bloco-titulo{
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+
+.lista{
+  display:flex;
+  flex-direction:column;
+  gap: 70px;
+}
+
+
+.item{
+  display:grid;
+  grid-template-columns: 120px 1fr;
+  gap: 30px;
+  align-items:start;
+}
+
+.ano{
+  margin: 0;
+  font-size: 12px;
+  opacity: .85;
+}
+
+.cargo{
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.descricao{
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+  max-width: 360px; 
+}
+
+
+.skills{
+  display:flex;
+  flex-direction:column;
+  gap: 14px;
+}
+
+.skill{
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.7;
+  max-width: 360px;
+}
+
+
+.rodape{
+  padding: 18px 0;
+  opacity: .7;
+  font-size: 12px;
+}
+
+
+@media (max-width: 900px){
+  .bloco{
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 35px 0;
+  }
+
+  .lista{
+    gap: 40px;
+  }
+
+  .item{
+    grid-template-columns: 110px 1fr;
+  }
+
+  .descricao, .skill{
+    max-width: none;
+  }
+}

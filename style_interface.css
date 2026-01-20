@@ -1,0 +1,152 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f4f4f2;
+  color:#000;
+}
+
+.box{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+
+.topo{ padding: 18px 0; }
+
+.topo-interno{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.assinatura{
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+  text-decoration:none;
+  color:inherit;
+}
+
+.ponto{
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  background:#f4b000;
+  display:inline-block;
+}
+
+.cargo-topo{
+  font-size: 13px;
+  opacity:.7;
+}
+
+.menu a{
+  text-decoration:none;
+  color:#000;
+  font-size: 13px;
+}
+
+.menu .sep{
+  margin: 0 10px;
+  opacity:.6;
+}
+
+
+.principal{
+  padding: 90px 24px 120px;
+  display:grid;
+  grid-template-columns: 520px 1fr;
+  gap: 90px;
+  align-items:center;
+}
+
+
+.foto img{
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  object-fit: cover;
+  display:block;
+  margin: 0 auto;
+  background:#ddd;
+}
+
+
+.apresentacao h1{
+  margin:0 0 10px;
+  font-size: 72px;
+  font-weight: 800;
+}
+
+.apresentacao h2{
+  margin: 0 0 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.texto{
+  margin: 0 0 26px;
+  font-size: 12px;
+  line-height: 1.7;
+  max-width: 360px;
+  opacity: .9;
+}
+
+
+.botoes{
+  display:flex;
+  gap: 18px;
+  margin-top: 6px;
+}
+
+.botao{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  color:#000;
+  border: 1.5px solid #000;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.btn-curriculo{ background:#f4b000; }
+.btn-projetos{ background:#ff3b30; }
+.btn-contato{ background:#7ad9df; }
+
+.botao:hover{ opacity:.9; }
+
+
+.rodape{
+  padding: 18px 0;
+  opacity: .7;
+  font-size: 12px;
+}
+
+
+@media (max-width: 950px){
+  .hero{
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 50px 24px 80px;
+  }
+
+  .foto img{
+    width: 320px;
+    height: 320px;
+  }
+
+  .apresentacao h1{
+    font-size: 56px;
+  }
+}

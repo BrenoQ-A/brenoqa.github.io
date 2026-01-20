@@ -1,0 +1,198 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: whitesmoke;
+    color: black;
+}
+
+.parte{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.topo{
+
+    background: whitesmoke;
+    padding: 22px 0;
+}
+
+.interna{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.assinatura{
+
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.ponto{
+
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    background: red;
+    display: inline-block;
+}
+
+.cargo{
+
+    font-size: 14px;
+    opacity: .75;
+}
+
+.menu a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.menu .sep{
+
+    margin: 0 10px;
+    opacity: .6;
+}
+
+.menu .ativo{
+
+    color: #b87900;
+}
+
+/* Segunda metade da página */
+
+.pagina{
+
+    padding: 40px 24px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.info h1{
+
+    margin: 0;
+    font-size: 48px;
+}
+
+.sub{
+
+    margin: 8px 0 34px;
+    opacity: 85;
+}
+
+.bloco{
+
+    margin-top: 28px;
+}
+
+.bloco h2{
+
+    font-size: 16px;
+    margin: 0 0 6px;
+}
+
+.bloco p{
+
+    margin: 0;
+    font-size: 14px;
+    opacity: 85;
+}
+
+.form-grind{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 220px;
+    grid-template-areas:
+        "nome sobrenome ."
+        "email assunto ."
+        "mensagem mensagem botao";
+    gap: 22px 18px;
+}
+
+.campo{
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label{
+
+    font-size: 14px;
+}
+
+.req{color: #b30000;}
+
+input,textarea{
+
+    width: 100%;
+    border: 1.5px solid #000;
+    background: whitesmoke;
+    padding: 10px 12px;
+    font-size: 14px;
+    outline: none;
+}
+
+input{height: 44px;}
+
+textarea{
+
+    resize: none;
+    min-height: 190px;
+}
+
+.form-grid .field:nth-child(1){ grid-area: nome; }
+.form-grid .field:nth-child(2){ grid-area: sobrenome; }
+.form-grid .field:nth-child(3){ grid-area: email; }
+.form-grid .field:nth-child(4){ grid-area: assunto; }
+.form-grid .mensagem{ grid-area: mensagem; }
+
+.btn-wrap{
+  grid-area: botao;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.btn-circle{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1.5px solid #000;
+  background:#f4b000;
+  font-weight: 700;
+  font-size: 26px;
+  cursor:pointer;
+}
+
+/* Responsivo */
+@media (max-width: 900px){
+  .pagina{
+    grid-template-columns: 1fr;
+  }
+  .form-grid{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nome"
+      "sobrenome"
+      "email"
+      "assunto"
+      "mensagem"
+      "botao";
+  }
+  .btn-wrap{ justify-content:flex-start; }
+}
