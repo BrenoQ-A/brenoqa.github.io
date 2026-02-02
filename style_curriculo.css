@@ -34,6 +34,7 @@ body{
   display:flex;
   align-items:baseline;
   gap:10px;
+  text-decoration:none;  
 }
 
 .ponto{
@@ -169,5 +170,6 @@ body{
     max-width: none;
   }
 }
+
 
 
