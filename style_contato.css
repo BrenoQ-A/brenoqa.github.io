@@ -17,6 +17,7 @@ body{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
+    text-decoration:none;
 }
 
 .topo{
@@ -30,6 +31,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text_decoration:none;
 }
 
 .assinatura{
@@ -195,6 +197,7 @@ textarea{
   }
   .btn-wrap{ justify-content:flex-start; }
 }
+
 
 
 
