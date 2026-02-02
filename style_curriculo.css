@@ -26,6 +26,7 @@ body{
   display:flex;
   align-items:center;
   justify-content:space-between;
+  text-decoration:none;  
 }
 
 .assinatura{
@@ -167,3 +168,4 @@ body{
     max-width: none;
   }
 }
+
